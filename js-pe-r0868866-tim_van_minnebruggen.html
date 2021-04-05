@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script src="js/index.js"></script>
+    <title>Registreer</title>
+	        
+</head>
+
+<body>
+    <form>
+
+        <h1>Registreer</h1>
+        <h3>Meld je aan bij Anoroc Services, wij beschermen jouw software tegen malware!</h3>
+        <table>
+            <tr>
+                <td><label for="voornaam">Voornaam</label><br/>
+                <input type="text" id="voornaam" name="txtVoornaam" value="Uw voornaam" ></td>
+                <td><label for="naam">Naam</label><br/>
+                <input type="text" id="naam" name="txtNaam" value="Uw naam"></td>
+				<td rowspan="5">
+					<div id="alert1">
+						<h4 id="headerAlert"></h4>
+						<p id="paragraphAlert"></p>
+					</div>
+					<div id="alert2">
+						<h4 id="headerAlert2"></h4>
+						<p id="paragraphAlert2"></p>
+					</div>
+					<div id="alert3">
+						<h4 id="headerAlert3"></h4>
+						<p id="paragraphAlert3"></p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+                <td><label for="gebruikersnaam">Gebruikersnaam</label><br/>
+                <label for="@" id="apestaart">@</label><input type="text" id="gebruikersnaam" name="txtGebruikersnaam" value="u911236"></td>
+                <td><label for="email">E-mailadres</label><br/>
+                <input type="text" id="email" name="txtemail" value="mail@example.be"></td>
+			</tr>
+			<tr>
+                <td><label for="wachtwoord1">Wachtwoord</label><br/>
+                <input type="text" id="wachtwoord1" name="txtWachtwoord1"></td>
+                <td><label for="wachtwoord2">Herhaal wachtwoord</label><br/>
+                <input type="text" id="wachtwoord2" name="txtWachtwoord2"></td>
+			</tr>
+			<tr>
+				<td><div id="label1">Je wachtwoord moet minstens 8 tekens lang zijn</div></td>
+				<td></td>
+			</tr>
+		
+			<tr>
+				<td colspan="2"><label for="adres">Adres</label><br/>
+				<input type="text" id="adres" name="txtAdres" value="Uw adres en huisnummer"></td>				
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<td><label for="land">Land</label><br/>
+				</td>
+				<td><label for="provincie">Provincie</label><br/></td>
+				<td><label for="postcode">Postcode</label><br/></td>
+			</tr>
+			<tr>
+				<td><select name="Kies een land" id="land">
+					<option>Kies een land</option>
+					<option>Belgie</option>
+					<option>Frankrijk</option>
+					<option>Nederland</option>
+				</select></td>
+				
+				<td><select name="Kies een provincie" id="provincie">
+						<option>Kies een provincie</option>
+						<option>Antwerpen</option>
+						<option>Henegouwen</option>
+						<option>Limburg</option>
+						<option>Oost-Vlaanderen</option>
+						<option>West-Vlaanderen</option>
+						<option>---</option>
+						<option>Ardéche</option>
+						<option>Loire</option>
+						<option>---</option>
+						<option>Drenthe</option>
+						<option>Utrecht</option>
+					
+				</select></td>
+				<td><input type="text" id="postcode" name="txtpostcode">
+				</td>	
+			</tr>
+		</table>
+			<hr>
+		<table>
+			<tr>
+				<td><div id="nieuwsbrief">Hou me op de hoogte</div>
+				<div id="chbnieuwsbrief">
+				<input type="checkbox" name="cbNieuwsbrief" id="cbnieuwsbrief">Inschrijven voor onze nieuwsbrief<br/>
+				<input type="checkbox" name="cbvoorwaarden" id="cbvoorwaarden">Ik ga akkoord met de algemene <br/>
+                <input type="checkbox" name="cbunvisible" id="cbunvisible">voorwaarden.
+				<br/><br/></div></td>
+				<td><div id="betaling">Betaling</div>
+				<div id="btnbetaling">
+
+				<!--Groepeert de radiobuttons zodat slechts 1 selectie mogelijk is-->
+				<!-- https://www.w3schools.com/tags/att_input_type_radio.asp -->
+
+				<input type="radio" name="betalingswijze" id="rbBankingapp" checked > Banking app</br>
+				<input type="radio" name="betalingswijze" id="rbOverschrijving"> Overschrijving</br>
+				<input type="radio" name="betalingswijze" id="rbVisa" > Visa card</br>
+				<input type="radio" name="betalingswijze" id="rbPaypall"> Paypall</div></td>
+			</tr>
+		</table>
+		<hr>
+		<!--Drukken op deze knop ( slogan ) activeert de functie validateForm()-->
+		<input id="verzenden" type="button" value="Wave your magic wand" onclick="validateForm()">
+		   
+
+    </form>
+
+    <script>
+    </script>
+</body>
+
+</html>

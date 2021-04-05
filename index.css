@@ -1,0 +1,98 @@
+		#adres
+		{
+			width: 560px;
+			padding: 5px;
+		}
+
+		/*De kleurcodes voor de Alert meldingen zijn opgehaald via een 
+		online beschikbaar programma op https://imagecolorpicker.com/nl */ 
+		#alert1
+		{
+			background-color: #f8d7da;
+			text-decoration-color: #802f37;
+		}
+
+		#alert2
+		{
+			background-color: #d4edda;
+			text-decoration-color: #3c764a;
+		}
+
+		#alert3
+		{
+			background-color: #d1ecf1;
+			text-decoration-color: #31717b;
+		}
+
+		#apestaart
+		{
+			padding: 6px;
+			border-width: 1px;
+			border-color: lightgray;
+			background-color: lightgray;
+		}
+
+		#betaling, #nieuwsbrief
+		{
+			font-size: 20px;
+			font-weight: bold;
+			width: 260px;
+			margin-right: 60px;
+		}
+
+		#btnbetaling, #chbnieuwsbrief
+		{
+			width: 260px;
+		}
+
+		#cbunvisible
+		{
+			visibility: hidden;
+		}
+
+		#email, #naam, #voornaam, #wachtwoord1, #wachtwoord2 
+        {
+            width: 260px;
+			padding: 5px;
+			margin-right: 20px;
+        }
+
+		#gebruikersnaam
+		{
+			width: 233px;
+			padding: 5px;
+			margin-right: 20px;
+		}
+
+		#headerAlert, #headerAlert2, #headerAlert3
+		{
+			font-size: larger;
+		}
+
+		#label1
+		{
+			font-size: 14px;
+			width: 250px;
+		}
+
+		#land
+		{
+			width: 200px;
+			margin-right: 25px;			
+		}
+
+		#provincie
+		{
+			width: 150px;
+			margin-right: 25px;
+		}
+
+		#verzenden
+		{
+			width: 580px;
+			background-color: blue;
+			text-align: center;
+			color: cornsilk;
+			font-size: 18px;
+			padding: 10px;
+		}	
